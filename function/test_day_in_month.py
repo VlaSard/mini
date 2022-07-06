@@ -15,3 +15,4 @@ class TestDayInMonth(unittest.TestCase):
     def test_types(self):
         self.assertRaises(TypeError, day_in_month, '2a', 2022)
         self.assertRaises(TypeError, day_in_month, 5, "may")
+        self.assertRaises(TypeError, day_in_month, [True, False], [False, True])
